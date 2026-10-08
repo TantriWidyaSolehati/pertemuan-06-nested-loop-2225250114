@@ -25,6 +25,13 @@ python3 tugas/tabel_perkalian_dan_statistik.py
     - Setiap kali ditemukan hasil % 2 == 0, counter bertambah 1.
     - Counter dipakai untuk menghitung frekuensi/kuantitas, bukan nilai total.
 ## Hasil Pengujian
+| n | Hasil yang Diharapkan |                        | Hasil Aktual        |                        | Status |
+|---|-----------------------|------------------------|---------------------|------------------------|--------|
+|   | Jumlah Pasangan       | Total Semua | Banyak Genap | Jumlah Pasangan   | Total Semua | Banyak Genap |        |
+| 1 | 1                     | 1           | 0           | 1                 | 1           | 0           | Sesuai |
+| 2 | 4                     | 9           | 3           | 4                 | 9           | 3           | Sesuai |
+| 3 | 9                     | 36          | 5           | 9                 | 36          | 5           | Sesuai |
+
 | n |                hasil yang diharapkan               |                  keluaran aktual                   | status |
 |   |----------------------------------------------------|----------------------------------------------------|        |
 |   | jumlah pasangan | total semua | banyak hasil genap | jumlah pasangan | total semua | banyak hasil genap |        |
