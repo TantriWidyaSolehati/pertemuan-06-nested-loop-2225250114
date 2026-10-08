@@ -25,8 +25,8 @@ python3 tugas/tabel_perkalian_dan_statistik.py
     - Setiap kali ditemukan hasil % 2 == 0, counter bertambah 1.
     - Counter dipakai untuk menghitung frekuensi/kuantitas, bukan nilai total.
 ## Hasil Pengujian
-| n | Hasil yang Diharapkan |                           | Keluaran Aktual      |                           | Status |
-|---|-----------------------|---------------------------|-------------------|---------------------------|--------|
+| n | Hasil yang Diharapkan |             |             | Keluaran Aktual   |             |             | Status |
+|---|-----------------------|-------------|-------------|-------------------|-------------|-------------|--------|
 |   | Jumlah Pasangan       | Total Semua | Banyak Genap| Jumlah Pasangan   | Total Semua | Banyak Genap|        |
 | 1 | 1                     | 1           | 0           | 1                 | 1           | 0           | Sesuai |
 | 2 | 4                     | 9           | 3           | 4                 | 9           | 3           | Sesuai |
@@ -41,18 +41,22 @@ Karena loop dalam berjalan n kali untuk setiap iterasi loop luar, maka total eks
 ## Refleksi
 1. Kesalahan:
 salah menempatkan inisialisasi variabel akumulator atau counter.
+```bash
 total_baris = 0
 for i in range(1, n+1):
     for j in range(1, n+1):
         hasil = i * j
         total_baris += hasil
     print(f"Jumlah baris {i} = {total_baris}")
+```
 
 2.  Cara memperbaiki :
 Inisialisasi total_baris harus dilakukan di dalam loop luar, sebelum loop dalam dimulai:
+```bash
 for i in range(1, n+1):
     total_baris = 0   # reset setiap baris
     for j in range(1, n+1):
         hasil = i * j
         total_baris += hasil
     print(f"Jumlah baris {i} = {total_baris}")
+    ```
